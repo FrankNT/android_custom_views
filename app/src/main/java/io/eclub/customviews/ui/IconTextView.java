@@ -13,8 +13,6 @@ import android.util.AttributeSet;
 import io.eclub.customviews.R;
 
 
-//import com.lazada.core.view.FontTextView;
-//// TODO: 2017/12/14
 public class IconTextView extends AppCompatTextView {
     private boolean adjusted;
 
@@ -64,8 +62,6 @@ public class IconTextView extends AppCompatTextView {
         public void draw(@NonNull Canvas canvas) {
             int halfCanvas = canvas.getHeight() / 2;
             int halfDrawable = drawable.getIntrinsicHeight() / 2;
-
-            // align to top
             canvas.save();
             int dy = -halfCanvas + halfTextSize + paddingTop + halfDrawable;
             canvas.translate(0, dy);
